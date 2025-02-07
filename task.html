@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task</title>
+        <!-- Bootstrap5 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- icons Bootstrap5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            .about {
+                height: calc(100vh - 72px);
+            }
+            .service,
+            .pricing {
+                background-color: gainsboro;
+            }
+            .portfolio {
+                background-color: gray;
+            }
+            .carousel-indicators {
+                margin-bottom: -3rem;
+            }
+            .main-btn {
+                width: fit-content;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- start nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-5">
+                            <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link" href="#service">SERVICE</a>
+                        </li>
+                        <li class="nav-item dropdown px-5">
+                            <a class="nav-link dropdown-toggle" href="#portfolio" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PORTFOLIO
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#portfolio">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link" href="#pricing" >PRICING</a>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link" href="#contact" >CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+        <!-- start section about -->
+        <div class="about bg-dark d-flex justify-content-center align-items-center" id="about">
+            <div class="container-fluid text-center">
+                <div class="heading">
+                    <h1 class="mt-5 text-primary display-3">Company</h1>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum distinctio reiciendis laboriosam,</p>
+                </div>
+                <div class="input-group mt-4 mb-5">
+                    <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-danger" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <!-- end section about -->
+        <!-- start service -->
+        <div class="service py-5" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-center border border-primary bg-light">
+                        <h3>Project</h3>
+                        <img src="images/features-01.jpg" alt="" style="width: 200px;" class="img-fluid">
+                        <p class="mt-1">Project description</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        information one
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        information two
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        information three
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end service --> 
+        <!-- start portfolio-->
+        <section class="portfolio py-5" id="portfolio">
+            <div class="container py-5">
+                <h1 class="text-center mb-4">WHAT OUR CUSTOMERS SAY</h1>
+                <div id="customerFeedbackCarousel" class="carousel slide p-4" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#customerFeedbackCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#customerFeedbackCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#customerFeedbackCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="text-center">"This company provided outstanding service! Highly recommended!"</p>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>John Doe</h5>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="text-center">"Excellent quality and fantastic customer support!"</p>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Jane Smith</h5>
+                                <p>Marketing Manager, BizWorld</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="text-center">"Couldn't be happier with the results. Will definitely work with them again!"</p>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Emily Johnson</h5>
+                                <p>Freelancer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#customerFeedbackCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#customerFeedbackCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- End portfolio-->
+        <!-- start pricing -->
+        <div class="pricing py-5" id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-primary mb-3" style="max-width: 25rem;">
+                            <div class="card-header bg-primary border-primary text-center text-light p-4 fw-bold fs-4">Basic</div>
+                            <div class="card-body text-center text-muted">
+                                <p>20 LOrem</p>
+                                <p>15 LOrem</p>
+                                <p>5 Dolor</p>
+                                <p>2 Sit</p>
+                                <p>Endless Amet</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-primary text-center text-dark">
+                                <p class="m-0">$19</p>
+                                <span class="d-block text-muted">per month</span>
+                                <button type="button" class="btn btn-primary mb-3 mt-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-primary mb-3" style="max-width: 25rem;">
+                            <div class="card-header bg-primary border-primary text-center text-light p-4 fw-bold fs-4">Basic</div>
+                            <div class="card-body text-center text-muted">
+                                <p>20 LOrem</p>
+                                <p>15 LOrem</p>
+                                <p>5 Dolor</p>
+                                <p>2 Sit</p>
+                                <p>Endless Amet</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-primary text-center text-dark">
+                                <p class="m-0">$19</p>
+                                <span class="d-block text-muted">per month</span>
+                                <button type="button" class="btn btn-primary mb-3 mt-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-primary mb-3" style="max-width: 25rem;">
+                            <div class="card-header bg-primary border-primary text-center text-light p-4 fw-bold fs-4">Basic</div>
+                            <div class="card-body text-center text-muted">
+                                <p>20 LOrem</p>
+                                <p>15 LOrem</p>
+                                <p>5 Dolor</p>
+                                <p>2 Sit</p>
+                                <p>Endless Amet</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-primary text-center text-dark">
+                                <p class="m-0">$19</p>
+                                <span class="d-block text-muted">per month</span>
+                                <button type="button" class="btn btn-primary mb-3 mt-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- end pricing -->
+        <!-- start  contact-->
+        <div class="contact py-5" id="contact">
+            <div class="container">
+                <h1 class="text-center mt-3 mb-3">Contact</h1>
+                <div class="row">
+                    <div class="col-lg-6 text-muted">
+                        <p >Contact us and we will get back to you within 24 hours</p>
+                        <div class="mb-3">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Chicago,US</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="bi bi-phone"></i>
+                            <span>+00151515151515</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>myemail@something.com</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+                            <button type="submit" class=" main-btn btn btn-primary ">Send</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- end  contact-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
